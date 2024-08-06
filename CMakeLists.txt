@@ -70,7 +70,7 @@ set(MPAS_CORES init_atmosphere atmosphere CACHE STRING "MPAS-Model: cores to bui
 ecbuild_bundle( PROJECT MPAS      GIT "https://github.com/MPAS-Dev/MPAS-Model" BRANCH hotfix-v8.2.1 UPDATE )
 option(ENABLE_MPAS_JEDI_DATA "Obtain mpas-jedi test data from mpas-jedi-data repository (vs tarball)" ON)
 ecbuild_bundle( PROJECT mpas-jedi-data  GIT "https://github.com/JCSDA-internal/mpas-jedi-data.git" BRANCH develop UPDATE  )
-ecbuild_bundle( PROJECT mpas-jedi GIT "https://github.com/JCSDA-internal/mpas-jedi" BRANCH feature/MPAS-Model_v8.1 )
+ecbuild_bundle( PROJECT mpas-jedi GIT "https://github.com/liujake/mpas-jedi" BRANCH release/3.0.0-beta )
 
 
 # Set GIT_BRANCH_FUNC to MPAS-JEDI's current branch so that it can be used for mpas-jedi-data
