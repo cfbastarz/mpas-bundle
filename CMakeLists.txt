@@ -38,6 +38,7 @@ option(BUNDLE_SKIP_RTTOV "Don't build rttov"  "ON") # Skip rttov build unless us
 ecbuild_bundle( PROJECT rttov     GIT "https://github.com/JCSDA/rttov.git"       BRANCH develop UPDATE )
 
 ecbuild_bundle( PROJECT oops      GIT "https://github.com/JCSDA/oops.git"        BRANCH develop UPDATE )
+ecbuild_bundle( PROJECT vader     GIT "https://github.com/JCSDA/vader.git"       BRANCH develop UPDATE )
 ecbuild_bundle( PROJECT saber     GIT "https://github.com/JCSDA/saber.git"       BRANCH develop UPDATE)
 ecbuild_bundle( PROJECT crtm      GIT "https://github.com/JCSDA/CRTMv3.git"      BRANCH develop UPDATE )
 ecbuild_bundle( PROJECT ioda      GIT "https://github.com/JCSDA/ioda.git"        BRANCH develop UPDATE )
