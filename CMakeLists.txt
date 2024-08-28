@@ -41,7 +41,7 @@ ecbuild_bundle( PROJECT oops      GIT "https://github.com/JCSDA/oops.git"       
 ecbuild_bundle( PROJECT saber     GIT "https://github.com/JCSDA/saber.git"       BRANCH develop UPDATE)
 ecbuild_bundle( PROJECT crtm      GIT "https://github.com/JCSDA/CRTMv3.git"      BRANCH develop UPDATE )
 ecbuild_bundle( PROJECT ioda      GIT "https://github.com/JCSDA/ioda.git"        BRANCH develop UPDATE )
-ecbuild_bundle( PROJECT ufo       GIT "https://github.com/JCSDA/ufo.git"         BRANCH develop UPDATE)
+ecbuild_bundle( PROJECT ufo       GIT "https://github.com/liujake/ufo-internal.git"         BRANCH develop UPDATE)
 
 # ioda and ufo test data
 #---------------------------------
@@ -76,8 +76,8 @@ branch_checkout (REPO_DIR_NAME ufo-data
 
 set(MPAS_DOUBLE_PRECISION "ON" CACHE STRING "MPAS-Model: Use double precision 64-bit Floating point.")
 set(MPAS_CORES init_atmosphere atmosphere CACHE STRING "MPAS-Model: cores to build.")
-ecbuild_bundle( PROJECT MPAS GIT "https://github.com/JCSDA-internal/MPAS-Model.git" BRANCH release-stable UPDATE)
-ecbuild_bundle( PROJECT mpas-jedi GIT "https://github.com/JCSDA/mpas-jedi"  BRANCH develop UPDATE)
+ecbuild_bundle( PROJECT MPAS GIT "https://github.com/MPAS-Dev/MPAS-Model.git" TAG v8.2.1)
+ecbuild_bundle( PROJECT mpas-jedi GIT "https://github.com/liujake/mpas-jedi-internal"  BRANCH develop UPDATE)
 
 # same procedure for mpas-jedi-data
 find_branch_name(REPO_DIR_NAME mpas-jedi)
